@@ -61,8 +61,8 @@ const TodoApp = () => {
         setArray([]);
     }
 
-    const Cross = (id) => {
-        setLine(true);
+    const Cross = () => {
+        setLine(!line);
        }
    
     return (
