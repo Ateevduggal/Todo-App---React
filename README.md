@@ -1,3 +1,8 @@
+# In this project you can do the following with your todos
+1. Can Mark them as done
+2. Can edit them 
+3. Can delete them 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
