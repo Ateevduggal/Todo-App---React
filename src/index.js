@@ -6,7 +6,6 @@ import TodoApp from "./TodoApp"
 
 ReactDOM.render(
 <>
-<App />
 <TodoApp />
 </>,
 document.getElementById("root"));

@@ -8,7 +8,7 @@ const TodoApp = () => {
   const [line, setLine] = useState(false); // for text decoration
   const [toggle, setToggle] = useState(false); // for toggling between add sign and edit sign
   const [toggleId, setToggleId] = useState("");
-  const [color, setColor] = useState("#faca55");
+  const [color, setColor] = useState("blue");
 
   const ListItem = (e) => {
     setData(e.target.value);
@@ -37,7 +37,7 @@ const TodoApp = () => {
     });
     setToggle(true);
 
-    setData(EditArray.name); //We wanrt only the name to be displayed in the input field
+    setData(EditArray.nameN); //We wanrt only the name to be displayed in the input field
 
     setToggleId(id);
 
@@ -51,7 +51,7 @@ const TodoApp = () => {
           if (Val.id === toggleId) {
             return { ...Val, name: data };
           }
-          return array;
+          return Val;
         })
       );
       setToggle(false);
@@ -71,7 +71,7 @@ const TodoApp = () => {
     <>
       <div className="container-fluid">
         <div className="row text-center mt-sm-5">
-          <div className="col-12 fw-bold fs-1">Todo App with Local Storage</div>
+          <div className="col-12 fw-bold fs-1">Todo App</div>
           <div className="col-12 text-center d-flex justify-content-center my-3">
             <input
               type="text"
@@ -117,7 +117,6 @@ const TodoApp = () => {
                     <i className="fas fa-edit"></i>
                   </button>
                 </ol>
-
                 <div className="col-md-4 col-sm-3"></div>
               </>
             );
